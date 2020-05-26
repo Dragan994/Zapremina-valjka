@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Kalkulator Zapremine</title>
+</head>
+<body>
+    <h1>Kalkulator zapremine valjka</h1>
+    
+    <div class="wrapper">
+        <section>
+            <div id="userInputs">
+                <div class="inputContainer">
+                    <label for="poluPrecnik">Poluprecnik valjka (r): </label>
+                    <input id="input_poluPrecnik" name="poluPrecnik" type="number" min="0">
+                </div>
+                <div class="inputContainer">
+                    <label for="visina">Visina valjka (H): </label>
+                    <input id="input_visina" name="visina" type="number" min="0">
+                </div>
+                <p>Formula za izračunavanje: <br> <span id="rValue">r</span><sup>2</sup> * <span id="hValue">H</span> * <span id="piValue">PI</span></span></p>
+                <p>Zapremina valjka je: <br> <span id="rezultat"></span></p>
+            </div>
+
+            <!--  <button id="btn_izracunaj">Izracunaj</button> -->
+            
+        </section>
+        <aside>
+            <h3>Podešavanja</h2>
+            <div class="podesavanja">
+                <label for="decimala">Broj decimala: </label>
+                <input id="decimala" name="decimala" type="number" min="0" value="2">
+            </div>
+            <div class="podesavanja">
+                <label for="jedinicaMere">Jedinica mere</label>
+                <select name="jedinicaMere" id="jedinicaMere">
+                    <option value="none">/</option>
+                    <option value="mm">milimetar</option>
+                    <option value="cm">centimetar</option>
+                    <option value="m">metar</option>
+                    <option value="in">inch</option>
+                    <option value="ft">foot</option>
+                </select>
+            </div>
+            <div class="podesavanja">
+                <label for="PI">Pokaži PI</label>
+                <input type="checkbox" name="PI" id="piCheck" value="1">
+            </div>
+        </aside>
+    </div><!--.wrapper-->
+<script src="app.js"></script>
+</body>
+</html>
